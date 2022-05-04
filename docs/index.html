@@ -15,8 +15,8 @@
 
 <header>
    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="https://tictactoe.demo.lmh.li/">Tic Tac Toe</a>
-      <a href="https://github.com/bugstop/tic-tac-toe-game" class="badge badge-info">view on GitHub</a>
+      <a class="navbar-brand" href="https://tictactoe.github.rank.technology/">Tic Tac Toe</a>
+      <a href="https://github.com/theRank/tic-tac-toe-game" class="badge badge-info">view on GitHub</a>
    </nav>
 </header>
 
@@ -49,7 +49,7 @@
             <h2 class="mb-0">
                <button class="btn btn-link collapsed text-decoration-none" type="button" data-toggle="collapse"
                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="foot">
-                  Copyright &copy; 2020-2021 bugstop. <span class="d-none d-sm-inline">All rights reserved.</span>
+                  Copyright &copy; <span id="year">2022</span> Rank Technology. <span class="d-none d-sm-inline">All rights reserved.</span>
                </button>
             </h2>
          </div>
@@ -57,11 +57,11 @@
             <div class="card-body">
                <span>
                   This repository is maintained by <a class="text-decoration-none text-info" href="https://github.com/bugstop">
-                  bugstop</a>; the source code is licensed under the <a class="text-decoration-none text-info"
-                  href="https://github.com/bugstop/tic-tac-toe-game/blob/master/LICENSE">MIT License</a>.
+                  bugstop</a>. The source code is licensed under the <a class="text-decoration-none text-info"
+                  href="https://github.com/theRank/tic-tac-toe-game/blob/master/LICENSE">MIT License</a>.
                </span>
                <span class="d-none d-sm-inline">
-                  Last updated on April 30, 2021, version 1.2.5.
+                  Last updated on May 4, 2022, version 1.2.6.
                </span>
             </div>
          </div>
@@ -74,6 +74,12 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/fontawesome.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+   let date = new Date()
+   let year = date.getUTCFullYear()
+   document.getElementById("year").innerHTML = year
+</script>
 
 </body>
 </html>
